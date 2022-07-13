@@ -1,16 +1,26 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import MenuBar from './components/menu/MenuBar.vue';
-import SideBar from './components/finance-banner/index.vue'
+import SideBar from './components/filters/sidebar.vue'
+import FinanceBanner from "./components/finance-banner/banner.vue";
 import Footer from "./components/footer/index.vue";
+import ListingTile from "./components/card/listing-tile.vue";
 </script>
 
 <template>
   <header>
     <div class="wrapper">
-   
     <MenuBar/>
-      <SideBar />
+      <FinanceBanner/>
+      <div class="row">
+        <div class="col-md-3">
+            <side-bar />
+        </div>
+        <div class="col-md-9">
+          <listing-tile/>
+        </div>
+      </div>
+
       <Footer/>
     </div>
   </header>
@@ -18,7 +28,7 @@ import Footer from "./components/footer/index.vue";
   <RouterView />
 </template>
 
-<style>
-@import '@/assets/base.css';
+<style lang="scss">
+@import '@/assets/sass/base.scss'
 
 </style>
