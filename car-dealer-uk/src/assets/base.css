@@ -1,0 +1,28 @@
+body{
+    height: 100vh;
+}
+.navbar-buttons--menu {
+align-items: center;
+padding: 11px 25px 12px;
+gap: 10px;
+width: 98px;
+height: 40px;
+background: #82F7FF;
+border-radius: 16px;
+text-decoration: none;
+color: #000 ;
+
+}
+
+.finance-banner{
+    position: relative;
+    height: 137px;
+    left: 0;
+    background: #282338;
+    border-radius: 0 0 0 50px;
+
+}
+.bg-circle{
+
+}
+
