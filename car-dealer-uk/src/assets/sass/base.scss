@@ -1,9 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+
+$primary-color: #7572FF;
+$secondary-color:  #282338;
+$primary-gray: #A2A9AF;
+$card-border-radius: 50%;
+
+.mini-text{
+  font-size: 12px;
+}
+.card{
+  border-radius: 20px !important;
+}
+.mini-text .link-card {
+  color: $primary-color;
+  text-underline: none;
 
 
+}
+
+.pill-ho{
+  border: 1px solid black;
+  color: black;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 0 15px 4px 15px;
+
+  height: 24px;
+
+  text-align: center;
+
+}
+.pill-ho:hover{
+  border: none;
+  background-color: #7572FF;
+}
+
+
+.back-to-top {
+  text-underline: #3F3A50 ;
+}
+.subscript{
+  font-size: 10px;
+  top: -.1.8em ;
+  color: $primary-color;
+}
+
+.card{
+
+border-radius: 16px;
+  box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+.header{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.subtext{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
 
 body{
   height: 100vh;
+  margin: 20px;
+  font-family: 'Overpass', sans-serif;
 }
+.heading__title{
+  font-weight: bold;
+}
+
+.heading__title .subscript {
+  color: $primary-color;
+  font-weight: inherit;
+}
+
+.heading__subtitle {
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.15em;
+  color: $primary-gray;
+}
+
 .navbar-buttons--menu {
   align-items: center;
   padding: 11px 25px 12px;
@@ -11,6 +96,7 @@ body{
   width: 98px;
   height: 40px;
   background: #82F7FF;
+  font-weight: 600;
   border-radius: 16px;
   text-decoration: none;
   color: #000 ;
@@ -25,7 +111,178 @@ body{
   border-radius: 0 0 0 50px;
 
 }
+.finance-banner .oval{
+  background-color: rgba(255,255,255,0.2);
+  height: 137px;
+  border-radius: 0 0 160px 50px;
+}
+.finance-banner__title{
+  color: #FFFFFF;
+  z-index: 999;
+  font-weight: bold;
+}
+
+.finance-banner__subtitle{
+  color: #FFFFFF;
+  z-index: 999;
+}
 .bg-circle{
 
 }
 
+.btn-primary{
+  background-color: $primary-color;
+  border-radius: 50%;
+}
+
+.pills{
+  border-radius: 10px;
+  position: absolute;
+  color: #FFF;
+
+
+
+}
+
+.pills__options
+{
+  position: inherit;
+  border-radius: 50px;
+  color: inherit;
+
+}
+.card-container{
+  position: relative;
+  display:inline-block;
+}
+.card-section .card-heading{
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+
+
+
+}
+.card-section .card__sub-heading {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.pills__text{
+  font-size: 16px;
+  text-transform: lowercase;
+  font-weight: 600;
+  padding: 4px 8px 4px 8px;
+
+}
+
+.pills__text::first-letter{
+  text-transform: uppercase !important;
+}
+.pills-primary{
+  background-color: $primary-color;
+}
+
+.pills-secondary{
+  background-color: #282338;
+}
+
+.pills-secondary__options{
+
+}
+
+.footer-main{
+  background-color: $secondary-color;
+  border-top-right-radius: 50px ;
+
+}
+
+.badge-special{
+
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  padding: 4px;
+
+
+}
+
+.badge-secondary{
+
+  background-color: $secondary-color;
+  color: white;
+  border-radius: 50px;
+  margin: 3px;
+  padding: 5px;
+  font-size: 10px;
+}
+
+.footer-main .headings
+{
+  color: #FFF
+}
+
+.footer-main .list-items {
+  color: #A2A9AF;
+}
+
+.footer-legal{
+  background-color: #3F3A50 ;
+}
+
+.subtext{
+  color:#FFF;
+}
+
+.link{
+  color: $primary-color;
+  font-size: 16px;
+}
+
+.pagination .btn{
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  gap: 10px;
+  border: 1px solid #D1D6E0;
+  border-radius: 8px;
+
+  color: #55595D;
+  border-radius: 8px;
+  width: 50px;
+  height: 30px;
+
+
+
+}
+.pagination .btn:hover{
+  background: #7572FF;
+  color: #FFF;
+
+}
+
+.dropdown__main{
+  background: #F6F7FB;
+  border-radius: 10px;
+  border-style: none;
+  padding: 15px 8px 15px 8px;
+
+}
+
+.dropdown__filter {
+  background: #3F3A50;
+  border-radius: 16px;
+}
+
+.card{
+  border-radius: 50px;
+}
