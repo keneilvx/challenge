@@ -14,24 +14,16 @@
 
     </div>
     <div class="col-lg-9">
-      <div class="row">
-        <div class="col" v-for="(select, index) in types">
 
-          <div>
-        <span>
+      <div class="row d-flex justify-content-around align-items-center">
+        <div class="col-3" v-for="(select, index) in types">
           <span>{{select.name}}</span>
-        </span>
-            <select style="background: #3F3A50;
-border-radius: 16px; width: 217px;
-height: 50px;">
+            <select class="dropdown__top" style="">
               <option>Select</option>
             </select>
-          </div>
         </div>
       </div>
     </div>
-
-
   </div>
 </div>
 </template>
