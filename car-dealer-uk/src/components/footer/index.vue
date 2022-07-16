@@ -2,10 +2,10 @@
   <div class="footer">
     <div class="footer-main p-4">
       <div class="row">
-        <div class="col-2">
+        <div class="col-md-2 col-12 text-sm-center text-md-center">
           <h6 class="headings">CarDealer<sup class="subscript p-1" style="">UK</sup></h6>
         </div>
-        <div class="col-5">
+        <div class="col-md-5 col-12">
           <div class="row">
             <p class="headings">Branch Details</p>
             <div class="col-5">
@@ -17,7 +17,7 @@
                 BU51 N55
               </p>
             </div>
-            <div class="col-7">
+            <div class="col-md-7 col-12">
               <p class="heading__subtitle">Opening Times</p>
               <div class="row" v-for="(items, index) in opening_times">
                 <div class="col-6">
@@ -29,17 +29,17 @@
               </div>
 
             </div>
-            <div class="col-5">
+            <div class="col-md-5">
               <p class="heading__subtitle">Email</p>
               <a class="link">enquires@cardealer.uk</a>
             </div>
-            <div class="col-7">
+            <div class="col-md-7 col-12">
               <p class="heading__subtitle ">Telephone</p>
               <a class="link">{{ telephone }}</a>
             </div>
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-md-3 col-12 ">
           <p class="headings">Popular Brands</p>
           <div class="row">
             <div v-for="(brand) in brands" class="col-6">
