@@ -12,11 +12,11 @@ import ListingTile from "./components/card/listing-tile.vue";
     <div class="wrapper">
     <MenuBar/>
       <FinanceBanner/>
-      <div class="row">
-        <div class="col-md-3">
+      <div class="row mt-4">
+        <div class="col-md-2">
             <side-bar />
         </div>
-        <div class="col-md-9">
+        <div class="col-md-10">
           <listing-tile/>
         </div>
       </div>
@@ -29,6 +29,6 @@ import ListingTile from "./components/card/listing-tile.vue";
 </template>
 
 <style lang="scss">
-@import '@/assets/sass/base.scss'
+
 
 </style>
