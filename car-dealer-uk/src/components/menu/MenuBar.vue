@@ -2,7 +2,7 @@
     <div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">CarDealer<sup class=" pl-1">UK</sup></a>
+    <a class="navbar-brand heading__title" href="#">CarDealer<sup class="subscript pl-1">UK</sup></a>
 
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -31,11 +31,12 @@
 
     </div>
     <div class="navbar-buttons">
-      <button class="" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        Dropdown
-      </button>
+
       <a class="navbar-buttons--menu m-1">Call Us</a>
       <a  class="navbar-buttons--menu m-1" >Email Us</a>
+      <button class="navbar-toggler  " type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+      </button>
     </div>
   </div>
 </nav>
