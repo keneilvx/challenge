@@ -19,17 +19,29 @@ $card-border-radius: 50%;
 
 }
 
+
+
 .pill-ho{
   border: 1px solid black;
   color: black;
   text-decoration: none;
   border-radius: 20px;
   padding: 0 15px 4px 15px;
-
   height: 24px;
-
   text-align: center;
 
+}
+
+.dropdown__top {
+  background: #3F3A50;
+  border-radius: 16px;
+  height: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.dropdown__top:after{
+  border: 1px solid white;
 }
 .pill-ho:hover{
   border: none;
@@ -166,6 +178,11 @@ body{
 
 
 }
+.card-link {
+  color: $primary-color;
+  text-decoration: none;
+}
+
 .card-section .card__sub-heading {
   font-family: 'Source Sans Pro';
   font-style: normal;

@@ -9,8 +9,8 @@
 <div class="">
     <listing-type :total="brands.length" />
       <div class="row">
-        <div class="col-md-4" v-for="(car, index) in brands">
-          <div class="card mb-2">
+        <div class=" col-md-4 col-sm-6 col-xs-12" v-for="(car, index) in brands">
+          <div class="card mb-2" v-if="car.name">
             <div class="card-container">
               <span class="pills pills-secondary pills__text m-2  ">{{ car.advert_classification }}</span>
               <div class="badge-special">
@@ -28,6 +28,30 @@
              <span class="mini-text">£23,300 <a class="card-link">Calculate</a></span>
 
             <p></p>
+            </div>
+
+
+            <div>
+
+            </div>
+          </div>
+          <div class="card mb-2 " v-else>
+
+            <div class="card-container text-center ">
+              <h5>Value your car</h5>
+              <p>Find out the value of your car in just a few minutes.</p>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">VRM</span>
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Mileage</span>
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+              <div>
+                <button>Value my car</button>
+              </div>
+
             </div>
 
 
@@ -63,7 +87,9 @@ export default {
           console.log('Error getting Data')
         }else{
           this.brands= resp.data
+
           console.log(this.brands)
+
         }
 
       })

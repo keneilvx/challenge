@@ -1,31 +1,52 @@
 <template>
-    <div>
-      <div class="row">
+      <div class="row mb-3">
           <div class="col-10">
             Representative example: Borrowing £11,790.00 over 4 years with a representative APR of 7.9 %, an annual interest rate of 4.08 % (Fixed) and a deposit of £500.00, the amount payable would be £273.59 per month, with a total cost of credit of £1,843.32 and a total amount payable of £13,633.32.
           </div>
           <div class="col-2">
-              <button>Hide Dropdown</button>
+            <button class="" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+              Accordion Item #1
+            </button>
           </div>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
 
-      </div>
-      <div class="row">
-        <ul>
-          <li>Personal Contract purchase</li>
-          <li>Hire Purchase</li>
-        </ul>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+              <div class="accordion-body">
+                <div class="row">
+                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Personal Contract purchase</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Hire Purchase</button>
+                    </li>
 
-        <div>
-          <div class="container">
-            <div class="row rows-cols-5">
-               <div class="col"></div>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                      <div class="row">
+                        <div class="col-3" v-for="(items, index)  in personal_contract_purchase">
+                          <div class="card m-2" >
+                            <div class="text-center p-2">
+                              <div>{{ items.name}}</div>
+                              <div>{{items.info}}</div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-
           </div>
-        </div>
 
+        </div>
       </div>
-    </div>
+
+
 </template>
 
 <script>

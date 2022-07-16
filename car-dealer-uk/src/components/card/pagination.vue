@@ -1,17 +1,17 @@
 <template>
 <div class="row p-4">
 
-    <div class="col-4"><a>Back to top</a></div>
-    <div class="col-4">
+    <div class="col-3 d-none d-lg-block"><a>Back to top</a></div>
+    <div class="col-xs-12 col-6">
       <div class="row pagination">
-        <div class="col" v-for="(btns, index) in buttons">
+        <div class="col  m-0 p-0" v-for="(btns, index) in buttons">
           <button class="btn" >{{btns}}</button>
         </div>
       </div>
 
 
     </div>
-    <div class="col-4">
+    <div class="col-3 d-none d-lg-block">
       <div class="d-flex justify-content-end">
         <select class="dropdown__main">
           <option>
