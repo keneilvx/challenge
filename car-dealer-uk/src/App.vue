@@ -20,7 +20,7 @@ import ListingTile from "./components/card/listing-tile.vue";
           <listing-tile/>
         </div>
       </div>
-
+      <font-awesome-icon :icon="['fas', 'phone']" />
       <Footer/>
     </div>
   </header>

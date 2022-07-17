@@ -12,14 +12,18 @@ $card-border-radius: 50%;
 .card{
   border-radius: 20px !important;
 }
+.btn-primary {
+  background-color: $primary-color !important;
+  border-color: $primary-color !important;
+  border-radius: 10px !important;
+}
 .mini-text .link-card {
   color: $primary-color;
   text-underline: none;
-
-
 }
 
 
+.btn
 
 .pill-ho{
   border: 1px solid black;
