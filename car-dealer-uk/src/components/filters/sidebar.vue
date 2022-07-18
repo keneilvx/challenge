@@ -12,20 +12,7 @@
             <p>Filters</p>
           </div>
           <div class="col-6 d-flex justify-content-end">
-            <a style="font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-background-color: rgba(248, 123, 123, 0.15);
-border-radius: 16px;
-text-align: center;
-width: 73px;
-height: 30px;
-
-
-
-color: #F87B7B;
-">Reset</a>
+            <a class="reset">Reset</a>
           </div>
 
           <brand/>

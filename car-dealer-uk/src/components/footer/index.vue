@@ -135,7 +135,5 @@ export default {
 </script>
 
 <style scoped>
-table{
-  color: #FFFFFF;
-}
+
 </style>

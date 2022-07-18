@@ -38,7 +38,7 @@
             </div>
 
           </div>
-          <div class="card mb-2 h-100 p-4" style="background-color: #F6F7FB;" v-else>
+          <div class="card grey mb-2 h-100 p-4" v-else>
 
             <div class="card-container text-center">
               <h5>Value your car</h5>

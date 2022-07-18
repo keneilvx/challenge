@@ -22,9 +22,6 @@ $card-border-radius: 50%;
   text-underline: none;
 }
 
-
-.btn
-
 .pill-ho{
   border: 1px solid black;
   color: black;
@@ -167,6 +164,32 @@ body{
   color: inherit;
 
 }
+.reset {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: rgba(248, 123, 123, 0.15);
+  border-radius: 16px;
+  text-align: center;
+  width: 73px;
+  height: 30px;
+  color: #F87B7B;
+  text-decoration: none;
+}
+.grey{
+  background-color: #F6F7FB !important;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: #495057;
+  border-bottom: 3px solid $primary-color !important;
+}
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+
+  /* isolation: isolate; */
+}
+
 .card-container{
   position: relative;
   display:inline-block;
@@ -230,8 +253,6 @@ body{
   position: absolute;
   bottom: 0;
   padding: 4px;
-
-
 }
 
 .badge-secondary{
