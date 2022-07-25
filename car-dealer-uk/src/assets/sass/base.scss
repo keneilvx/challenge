@@ -179,6 +179,7 @@ body{
 }
 .grey{
   background-color: #F6F7FB !important;
+  border: 1px solid #D1D6E0 !important;
 }
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
   color: #495057;
@@ -216,6 +217,41 @@ body{
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
+}
+.cost-card {
+  position: absolute;
+  z-index: 999;
+
+  border-radius: 5px;
+  top: -13px;
+  background-color: #F6F7FB;
+}
+
+.card {
+
+  margin: 10px 4px;
+
+}
+
+
+.scroll-cards {
+  background-color: #fff;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background: transparent;
+}
+
+div.scroll-cards .card {
+  display: inline-block;
+  text-decoration: none;
+  height: auto;
+  width: 113px;
+  border-radius: 20px;
 }
 
 .pills__text{
