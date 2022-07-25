@@ -2,27 +2,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
 
 $primary-color: #7572FF;
-$secondary-color:  #282338;
+$secondary-color: #282338;
 $primary-gray: #A2A9AF;
 $card-border-radius: 50%;
+$primary-red: #F87B7B;
 
-.mini-text{
+.mini-text {
   font-size: 12px;
 }
-.card{
+
+.card {
   border-radius: 20px !important;
 }
+
 .btn-primary {
   background-color: $primary-color !important;
   border-color: $primary-color !important;
   border-radius: 10px !important;
 }
+
 .mini-text .link-card {
   color: $primary-color;
   text-underline: none;
 }
 
-.pill-ho{
+.pill-ho {
   border: 1px solid black;
   color: black;
   text-decoration: none;
@@ -41,38 +45,40 @@ $card-border-radius: 50%;
   padding-right: 40px;
 }
 
-.dropdown__top:after{
+.dropdown__top:after {
   border: 1px solid white;
 }
-.pill-ho:hover{
+
+.pill-ho:hover {
   border: none;
   background-color: #7572FF;
 }
 
 
 .back-to-top {
-  text-underline: #3F3A50 ;
+  text-underline: #3F3A50;
 }
-.subscript{
+
+.subscript {
   font-size: 10px;
-  top: -.1.8em ;
+  top: -.1 .8em;
   color: $primary-color;
 }
 
-.card{
+.card {
 
-border-radius: 16px;
+  border-radius: 16px;
   box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.15);
 }
 
-.header{
+.header {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-.subtext{
+.subtext {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -80,12 +86,13 @@ border-radius: 16px;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-body{
+body {
   height: 100vh;
   margin: 20px;
   font-family: 'Overpass', sans-serif;
 }
-.heading__title{
+
+.heading__title {
   font-weight: bold;
 }
 
@@ -112,11 +119,11 @@ body{
   font-weight: 600;
   border-radius: 16px;
   text-decoration: none;
-  color: #000 ;
+  color: #000;
 
 }
 
-.finance-banner{
+.finance-banner {
   position: relative;
   height: 137px;
   left: 0;
@@ -124,46 +131,48 @@ body{
   border-radius: 0 0 0 50px;
 
 }
-.finance-banner .oval{
-  background-color: rgba(255,255,255,0.2);
+
+.finance-banner .oval {
+  background-color: rgba(255, 255, 255, 0.2);
   height: 137px;
   border-radius: 0 0 160px 50px;
 }
-.finance-banner__title{
+
+.finance-banner__title {
   color: #FFFFFF;
   z-index: 999;
   font-weight: bold;
 }
 
-.finance-banner__subtitle{
+.finance-banner__subtitle {
   color: #FFFFFF;
   z-index: 999;
 }
-.bg-circle{
+
+.bg-circle {
 
 }
 
-.btn-primary{
+.btn-primary {
   background-color: $primary-color;
   border-radius: 50%;
 }
 
-.pills{
+.pills {
   border-radius: 10px;
   position: absolute;
   color: #FFF;
 
 
-
 }
 
-.pills__options
-{
+.pills__options {
   position: inherit;
   border-radius: 50px;
   color: inherit;
 
 }
+
 .reset {
   font-style: normal;
   font-weight: 400;
@@ -177,10 +186,12 @@ body{
   color: #F87B7B;
   text-decoration: none;
 }
-.grey{
+
+.grey {
   background-color: #F6F7FB !important;
   border: 1px solid #D1D6E0 !important;
 }
+
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
   color: #495057;
   border-bottom: 3px solid $primary-color !important;
@@ -191,11 +202,12 @@ body{
   /* isolation: isolate; */
 }
 
-.card-container{
+.card-container {
   position: relative;
-  display:inline-block;
+  display: inline-block;
 }
-.card-section .card-heading{
+
+.card-section .card-heading {
   font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 800;
@@ -204,8 +216,8 @@ body{
   color: #000000;
 
 
-
 }
+
 .card-link {
   color: $primary-color;
   text-decoration: none;
@@ -218,21 +230,49 @@ body{
   font-size: 12px;
   line-height: 18px;
 }
+
 .cost-card {
   position: absolute;
-  z-index: 999;
 
-  border-radius: 5px;
-  top: -13px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  z-index: 999;
+  border-radius: 10px !important;
+  top: -10px;
+  left: 10px;
+  padding: 2px;
   background-color: #F6F7FB;
 }
 
-.card {
-
-  margin: 10px 4px;
+.input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  margin-left: -1px;
+  border-radius: 16px !important;
 
 }
 
+.form-control {
+  border: #F6F7FB 1px solid !important;
+}
+
+.card {
+  margin: 10px 4px;
+}
+
+.card-img-top{
+  border-top-left-radius: 20px !important;
+  border-top-right-radius: 20px !important;;
+}
+.h-95 {
+  height: 95% !important;
+}
+
+.label-white {
+  position: absolute;
+  font-size: 12px;
+  color: #FFF;
+  font-weight: 400;
+}
 
 .scroll-cards {
   background-color: #fff;
@@ -254,7 +294,7 @@ div.scroll-cards .card {
   border-radius: 20px;
 }
 
-.pills__text{
+.pills__text {
   font-size: 16px;
   text-transform: lowercase;
   font-weight: 600;
@@ -262,28 +302,29 @@ div.scroll-cards .card {
 
 }
 
-.pills__text::first-letter{
+.pills__text::first-letter {
   text-transform: uppercase !important;
 }
-.pills-primary{
+
+.pills-primary {
   background-color: $primary-color;
 }
 
-.pills-secondary{
+.pills-secondary {
   background-color: #282338;
 }
 
-.pills-secondary__options{
+.pills-secondary__options {
 
 }
 
-.footer-main{
+.footer-main {
   background-color: $secondary-color;
-  border-top-right-radius: 50px ;
+  border-top-right-radius: 50px;
 
 }
 
-.badge-special{
+.badge-special {
 
   z-index: 2;
   position: absolute;
@@ -291,8 +332,8 @@ div.scroll-cards .card {
   padding: 4px;
 }
 
-.badge-secondary{
-
+.badge-secondary {
+  border: 1px solid rgba(255, 255, 255, 0.2);
   background-color: $secondary-color;
   color: white;
   border-radius: 50px;
@@ -301,8 +342,7 @@ div.scroll-cards .card {
   font-size: 10px;
 }
 
-.footer-main .headings
-{
+.footer-main .headings {
   color: #FFF
 }
 
@@ -310,20 +350,20 @@ div.scroll-cards .card {
   color: #A2A9AF;
 }
 
-.footer-legal{
-  background-color: #3F3A50 ;
+.footer-legal {
+  background-color: #3F3A50;
 }
 
-.subtext{
-  color:#FFF;
+.subtext {
+  color: #FFF;
 }
 
-.link{
+.link {
   color: $primary-color;
   font-size: 16px;
 }
 
-.pagination .btn{
+.pagination .btn {
   padding: 8px;
   display: flex;
   flex-direction: row;
@@ -340,15 +380,15 @@ div.scroll-cards .card {
   height: 30px;
 
 
-
 }
-.pagination .btn:hover{
+
+.pagination .btn:hover {
   background: #7572FF;
   color: #FFF;
 
 }
 
-.dropdown__main{
+.dropdown__main {
   background: #F6F7FB;
   border-radius: 10px;
   border-style: none;
@@ -361,6 +401,10 @@ div.scroll-cards .card {
   border-radius: 16px;
 }
 
-.card{
+.card {
   border-radius: 50px;
+}
+
+.red{
+  color: $primary-red;
 }

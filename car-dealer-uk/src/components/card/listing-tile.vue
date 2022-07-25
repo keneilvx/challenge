@@ -10,29 +10,32 @@ import RepresentativeExample from "./representative-example.vue";
   <div class="">
     <listing-type :total="brands.length -1"/>
     <div class="row">
-
       <div v-for="(car, index) in brands" class=" col-md-4 col-sm-6 col-xs-12 mb-2 ">
-        <div v-if="car.name" class="card  h-100">
+        <div v-if="car.name" class="card h-95">
           <div class="card-container">
             <div class="d-flex justify-content-between">
-              <span class="pills pills-secondary pills__text m-2 d-none d-sm-block">{{ car.advert_classification }}</span>
-              <span class="pills pills-secondary d-none d-sm-block">1 of {{ car.original_media_urls.length }}</span>
+              <span class="pills pills-secondary pills__text m-2 d-none d-sm-block">{{
+                  car.advert_classification
+                }}</span>
+              <span class="label-white m-3 d-none d-sm-block"
+                    style="right: 55px;">1 of {{ car.original_media_urls.length }}</span>
               <span>
-                <button class="pills pills-secondary m-2 d-none d-sm-block" style="right: 50px;">{{ '>' }}
+                <button class="pills pills-secondary m-2 d-none d-sm-block" style="right: 0;">{{ '>' }}
               </button></span>
               <span>
-                 <button class="pills pills-secondary m-2 d-none d-sm-block" style="right: 80px;">{{ '<' }}  </button>
+                 <button class="pills pills-secondary m-2 d-none d-sm-block" style="right: 30px;">{{ '<' }}  </button>
               </span>
             </div>
 
-            <div class="badge-special d-none d-sm-block">
+            <div class="badge-special pb-2 d-none d-sm-block">
               <span class="badge-secondary">{{ car.fuel_type }}</span>
               <span class="badge-secondary"> {{ car.transmission }}</span>
               <span class="badge-secondary">{{ car.body_type }}</span>
 
             </div>
             <img :src="car.original_media_urls[0]"
-                 class="card-img-top d-none d-sm-block" style="border-top-left-radius: 20px; border-top-right-radius: 20px">
+                 class="card-img-top d-none d-sm-block"
+                 style="">
             <section>
               <div class="row">
                 <div class="scroll-cards">
@@ -60,28 +63,30 @@ import RepresentativeExample from "./representative-example.vue";
           </div>
 
         </div>
-        <div v-else class="card grey mb-2 h-100 p-2">
-
+        <div v-else class="card grey mb-2 h-95 p-2">
           <div class="card-container text-center">
-            <div class="row">
+            <div class="row p-3">
               <div class="col-6 col-md-12">
                 <h5>Value your car</h5>
                 <p>Find out <span class="d-none d-sm-block">the value of your car </span> in just a few minutes.</p>
               </div>
               <div class=" d-none d-sm-block">
                 <div class="input-group mb-3">
-                  <span id="basic-addon1" class="cost-card">VRM</span>
-                  <input aria-describedby="basic-addon1" aria-label="Username" class="form-control" placeholder="Username"
+                  <span id="basic-addon1" class="cost-card">VRM<sup class="red">*</sup></span>
+                  <input aria-describedby="basic-addon1" aria-label="Username" class="form-control"
+                         placeholder="Username"
                          type="text">
                 </div>
                 <div class="input-group mb-3">
-                  <span id="basic-addon1" class="cost-card">Mileage</span>
-                  <input aria-describedby="basic-addon1" aria-label="Username" class="form-control" placeholder="Username"
+                  <span id="basic-addon1" class="cost-card">Mileage<sup class="red">*</sup></span>
+                  <input aria-describedby="basic-addon1" aria-label="Username" class="form-control"
+                         placeholder="Username"
                          type="text">
                 </div>
               </div>
               <div class="col-6 col-md-12 d-flex align-items-center">
-                <button class="col-12 btn-primary">Value my car</button>
+                <button class="col-12 btn-primary display">Value my car</button>
+                <button class="remove col-12 btn-primary">Get Valuation</button>
               </div>
             </div>
 
@@ -106,9 +111,8 @@ export default {
   name: "listing-tile",
   data() {
     return {
-      windowHeight: window.innerHeight,
       brands: [],
-      icons: ['<', '>']
+
     }
   },
   created() {
@@ -135,12 +139,6 @@ export default {
 
 
 <style scoped>
-  .label-input{
-    font-size: 12px;
-  }
-  .label-white{
-    position: absolute;
-  }
 @media only screen and (max-width: 576px) {
 
   .card {
@@ -158,6 +156,9 @@ export default {
   .card-img-top {
     border-radius: 20px;
   }
+  .display{
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 576px) {
@@ -166,6 +167,10 @@ export default {
   }
 
   .small-screen {
+    display: none;
+  }
+
+  .remove{
     display: none;
   }
 
