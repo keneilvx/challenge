@@ -25,7 +25,9 @@ $primary-red: #F87B7B;
   color: $primary-color;
   text-underline: none;
 }
-
+.pills-section{
+  position: relative;
+}
 .pill-ho {
   border: 1px solid black;
   color: black;
@@ -35,6 +37,13 @@ $primary-red: #F87B7B;
   height: 24px;
   text-align: center;
 
+}
+
+.pill-ho:hover {
+  border: none;
+  background-color: #7572FF;
+  transform: scale(1.2);
+  transition: all .2s;
 }
 
 .dropdown__top {
@@ -49,10 +58,7 @@ $primary-red: #F87B7B;
   border: 1px solid white;
 }
 
-.pill-ho:hover {
-  border: none;
-  background-color: #7572FF;
-}
+
 
 
 .back-to-top {
