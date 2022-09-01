@@ -4,10 +4,10 @@
       <div class="pills-section">
         <span class="fw-bold"> Showing {{ total }} cars</span>
 
-        <button class=" ml-5 pill-ho m-1" style="">All</button>
-        <button class="pill-ho m-1">Used</button>
-        <button class="pill-ho m-1">New</button>
-        <button class="pill-ho m-1">Offers</button>
+        <button class=" ml-5 pill-showing m-1" style="">All</button>
+        <button class="pill-showing m-1">Used</button>
+        <button class="pill-showing m-1">New</button>
+        <button class="pill-showing m-1">Offers</button>
       </div>
 
     </div>

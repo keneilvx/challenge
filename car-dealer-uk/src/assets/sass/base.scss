@@ -11,10 +11,12 @@ $primary-red: #F87B7B;
   font-size: 12px;
 }
 
+// Card
 .card {
   border-radius: 20px !important;
 }
 
+// General Styling 
 .btn-primary {
   background-color: $primary-color !important;
   border-color: $primary-color !important;
@@ -28,7 +30,7 @@ $primary-red: #F87B7B;
 .pills-section{
   position: relative;
 }
-.pill-ho {
+.pills-showing {
   border: 1px solid black;
   color: black;
   text-decoration: none;
@@ -39,7 +41,7 @@ $primary-red: #F87B7B;
 
 }
 
-.pill-ho:hover {
+.pill-showing:hover {
   border: none;
   background-color: #7572FF;
   transform: scale(1.2);
@@ -57,8 +59,6 @@ $primary-red: #F87B7B;
 .dropdown__top:after {
   border: 1px solid white;
 }
-
-
 
 
 .back-to-top {
@@ -155,9 +155,6 @@ body {
   z-index: 999;
 }
 
-.bg-circle {
-
-}
 
 .btn-primary {
   background-color: $primary-color;
