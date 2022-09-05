@@ -34,9 +34,9 @@
 
       <a class="navbar-buttons--menu m-1">Call Us</a>
       <a  class="navbar-buttons--menu m-1" >Email Us</a>
-      <button class="navbar-toggler  " type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-      </button>
+      <div class="d-md-none" style="position: relative; float: right;  padding-left: 10px;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <menuVue/>
+        </div>
     </div>
   </div>
 </nav>
@@ -44,3 +44,14 @@
     </div>
 
 </template>
+
+<script>
+  import menuVue from '../icons/menu.vue';
+  export default{
+
+    components:{
+      menuVue
+    }
+
+  }
+</script>
