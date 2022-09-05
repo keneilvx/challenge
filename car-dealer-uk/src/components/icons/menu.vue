@@ -1,0 +1,20 @@
+<template>
+ <div class="row">
+<div class="col-6">
+    Menu
+</div>
+<div class="col-6">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.5" y="9.5" width="5" height="5" rx="2.5" stroke="black"/>
+<rect x="9.5" y="0.5" width="5" height="5" rx="2.5" stroke="black"/>
+<rect x="9.5" y="9.5" width="5" height="5" rx="2.5" stroke="black"/>
+<rect x="9.5" y="18.5" width="5" height="5" rx="2.5" stroke="black"/>
+<rect x="18.5" y="9.5" width="5" height="5" rx="2.5" stroke="black"/>
+</svg>  
+   
+</div>
+
+ </div> 
+
+
+</template>
