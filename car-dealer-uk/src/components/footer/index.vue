@@ -2,8 +2,15 @@
   <div class="footer">
     <div class="footer-main p-4">
       <div class="row">
-        <div class="col-md-2 col-12 text-sm-center text-md-center">
+        <div class="col-md-2 col-12 text-centered">
           <h6 class="headings">CarDealer<sup class="subscript p-1" style="">UK</sup></h6>
+        </div>
+        <div class="row p-3 d-md-none">
+          <div class="col-12 text-center">
+            <a class="navbar-buttons--menu m-1 p-2 pl-3 pr-3">Call Us</a>
+          <a class="navbar-buttons--menu m-1 p-2 pl-3 pr-3"> Email Us</a>
+          </div>
+          
         </div>
         <div class="col-md-5 col-12">
           <div class="row">
@@ -48,7 +55,7 @@
           </div>
 
         </div>
-        <div class="col-2">
+        <div class="col-12 col-md-2">
           <p class="headings">Site Map</p>
           <div class="subtext">
             <p>Home</p>
@@ -136,4 +143,12 @@ export default {
 
 <style scoped>
 
+
+
+
+  @media only screen and (max-width: 600px) {
+    .text-centered{
+      text-align: center;
+}
+}
 </style>
