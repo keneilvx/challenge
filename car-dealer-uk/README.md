@@ -10,8 +10,9 @@ Descend into into car-dealer-uk directory
 
 ```
 cd car-dealer-uk
-```
 
+### NOTICE: Make sure you install the dependency for the json database 
+```
 npm install -g json-server
 ```
 ### Install necessary dependencies 
