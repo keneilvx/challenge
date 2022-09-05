@@ -27,7 +27,11 @@
             >
               <div class="accordion-body">
                 <div class="d-flex-wrap">
-                  <div class="">
+                  <div class="row">
+                    <div>
+                      
+                    </div>
+                    <options :item="test"/>
                     <options :item="test"/>
                   </div>
                 </div>
