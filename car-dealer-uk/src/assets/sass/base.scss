@@ -30,7 +30,7 @@ $primary-red: #F87B7B;
 .pills-section{
   position: relative;
 }
-.pills-showing {
+.pill-showing {
   border: 1px solid black;
   color: black;
   text-decoration: none;
@@ -39,6 +39,10 @@ $primary-red: #F87B7B;
   height: 24px;
   text-align: center;
 
+}
+
+.pill-showing .active{
+  background-color: $primary-color !important;
 }
 
 .pill-showing:hover {
@@ -197,14 +201,30 @@ body {
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
   color: #495057;
+  background-color: rgb(245, 247, 251) !important;
   border-bottom: 3px solid $primary-color !important;
+  border-top-color:  rgb(245, 247, 251) !important;
+    border-right-color: rgb(245, 247, 251) !important;
+    border-left-color: rgb(245, 247, 251) !important;
+
 }
 
-.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
-
-  /* isolation: isolate; */
+.nav-tabs .nav-link{
+  color: #55595D !important;
 }
 
+.resp-example .accordion{
+  border: none !important;
+  background-color: rgb(245, 247, 251) !important;
+ 
+}
+.resp-example .accordion-body {
+  background-color: rgb(245, 247, 251) !important;
+}
+
+.resp-example .accordion-item{
+  border: none !important;
+}
 .card-container {
   position: relative;
   display: inline-block;
