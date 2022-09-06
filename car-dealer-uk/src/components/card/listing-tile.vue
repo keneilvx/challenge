@@ -7,7 +7,7 @@ import RepresentativeExample from "./representative-example.vue";
 </script>
 
 <template>
-  <div class="">
+  <div class="row">
     <listing-type :total="brands.length -1"/>
     <div class="row">
       <div v-for="(car, index) in brands" class=" col-md-4 col-sm-6 col-xs-12 mb-2 ">
