@@ -9,8 +9,14 @@
 </template>
 
 <script>
+  import FilterDropdown from './components/filter-dropdown.vue';
 export default {
-  name: "budget"
+
+  name: "budget",
+
+  components: {
+    FilterDropdown
+  }
 }
 </script>
 
