@@ -2,46 +2,13 @@
   <div>
     <p class="heading__subtitle">Brand</p>
     <div>
-      <div class="row">
-        <div class="col-9">
-          <div><span>Make</span></div>
-        </div>
-        <div class="col-2">
-          <a
-            class=""
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#panelsStayOpen-collapseOne"
-            aria-expanded="true"
-            aria-controls="panelsStayOpen-collapseOne"
-          >
-            <remove-collapse></remove-collapse>  
-          </a>
-        </div>
-        <div class="accordion" id="accordionPanelsStayOpenExample">
-          <div class="accordion-item">
-            <div
-              id="panelsStayOpen-collapseOne"
-              class="accordion-collapse collapse show"
-              aria-labelledby="panelsStayOpen-headingOne"
-            >
-              <div class="accordion-body">
-                <div class="d-flex-wrap">
-                  <div class="row">
-                    <div>
-                      
-                    </div>
-                    <options :item="test"/>
-                    <options :item="test"/>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div><span>Model</span></div>
+      <filter-dropdown
+      :filter_id="'Name'" :filter_name="'Make'" :filter-options="'Land Rover'"
+      ></filter-dropdown>
+      <filter-dropdown
+      :filter_id="'Name'" :filter_name="'Model'" :filter-options="'Land Rover'"
+      ></filter-dropdown>
+      
     </div>
   </div>
 </template>
@@ -49,6 +16,10 @@
 <script>
   import Options from './components/options.vue';
   import removeCollapse from '../icons/remove-collapse.vue';
+  import addExpanded from '../icons/add-expanded.vue';
+import AddExpanded from '../icons/add-expanded.vue';
+
+import FilterDropdown from './components/filter-dropdown.vue';
 export default {
   name: "brand",
 data(){
@@ -59,8 +30,11 @@ data(){
   components:
   {
     Options,
-    removeCollapse
-  }
+    removeCollapse,
+    addExpanded,
+    AddExpanded,
+    FilterDropdown
+}
 };
 </script>
 
