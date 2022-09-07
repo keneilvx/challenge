@@ -1,22 +1,64 @@
 <template>
   <p class="heading__subtitle">Specification</p>
   <div>
-    <div><span>Fuel type</span></div>
-    <div><span>Body type</span></div>
-    <div><span>Transmission</span></div>
-    <div><span>Engine size</span></div>
-    <div><span>Mileage</span></div>
-    <div><span>Colour</span></div>
-    <div><span>Doors</span></div>
-    <div><span>Features</span></div>
-    <div><span></span></div>
+    <div v-for="(filter , index) in filters">
+      <filter-dropdown :filter_id="filter.id" :filter_name="filter.name"></filter-dropdown>
+    </div>
   </div>
 </template>
 
 <script>
+    import FilterDropdown from './components/filter-dropdown.vue';
 export default {
-  name: "specification"
-}
+  name: "specification",
+
+  components:{
+    FilterDropdown
+  },
+  data(){
+      return {
+        filters:[
+          {
+            id: 'FuelType',
+            name: 'Fuel type',
+
+          },
+          {
+            id: 'BodyType',
+            name: 'Body type'
+          },
+          {
+            name: 'Transmission'
+          },
+          {
+            id: 'EngineSize',
+            name: 'Engine size'
+          },
+          {
+            id: 'mileage',
+            name: 'Mileage'
+          },
+          {
+            id: 'colour',
+            name: 'Colour'
+          },
+          {
+            id: 'doors',
+            name: 'Doors'
+          },
+          {
+            id: 'features',
+            name: 'Features'
+          }
+        ]
+
+
+        }
+
+      }
+  }
+
+
 </script>
 
 <style scoped>
