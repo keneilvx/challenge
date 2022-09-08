@@ -9,7 +9,7 @@
             class=""
             type="button"
             data-bs-toggle="collapse"
-            :data-bs-target="'#'+ filter_name"
+            :data-bs-target="'#'+ filter_id"
             aria-expanded="true"
             aria-controls="panelsStayOpen-collapseOne"
           >
@@ -19,7 +19,7 @@
         <div class="accordion" id="accordionPanelsStayOpenExample">
           <div class="accordion-item">
             <div
-              :id="filter_name"
+              :id="filter_id"
               class="accordion-collapse collapse close"
               aria-labelledby="panelsStayOpen-headingOne"
             >
