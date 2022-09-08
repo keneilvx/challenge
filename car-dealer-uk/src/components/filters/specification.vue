@@ -19,19 +19,20 @@ export default {
       return {
         filters:[
           {
-            id: 'FuelType',
+            id: 'Fuel',
             name: 'Fuel type',
 
           },
           {
-            id: 'BodyType',
+            id: 'Body',
             name: 'Body type'
           },
           {
+            id: 'transmission',
             name: 'Transmission'
           },
           {
-            id: 'EngineSize',
+            id: 'Engine',
             name: 'Engine size'
           },
           {
