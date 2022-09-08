@@ -3,10 +3,10 @@
     <p class="heading__subtitle">Brand</p>
     <div>
       <filter-dropdown
-      :filter_id="'Name'" :filter_name="'Make'" :filter-options="'Land Rover'"
+      :filter_id="'make'" :filter_name="'Make'" :filter-options="'Land Rover'"
       ></filter-dropdown>
       <filter-dropdown
-      :filter_id="'Name'" :filter_name="'Model'" :filter-options="'Land Rover'"
+      :filter_id="'model'" :filter_name="'Model'" :filter-options="'Land Rover'"
       ></filter-dropdown>
       
     </div>
