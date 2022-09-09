@@ -12,15 +12,18 @@ import ListingTile from "./components/card/listing-tile.vue";
     <div class="wrapper">
     <MenuBar/>
       <FinanceBanner/>
-      <div class="row mt-4">
-        <div class="col-md-2">
+      <div>
+        <div class="row-main mt-4">
+          <div class="col-md-2">
             <side-bar />
+          </div>
+          <div class="col-md-10">
+            <listing-tile/>
+          </div>
         </div>
-        <div class="col-md-10">
-          <listing-tile/>
-        </div>
+        <Footer/>
       </div>
-      <Footer/>
+
     </div>
   </header>
 
@@ -28,6 +31,18 @@ import ListingTile from "./components/card/listing-tile.vue";
 </template>
 
 <style lang="scss">
+
+
+.row-main{
+
+    /* --bs-gutter-x: 1.5rem; */
+    /* --bs-gutter-y: 0; */
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x))
+}
 
 
 </style>
