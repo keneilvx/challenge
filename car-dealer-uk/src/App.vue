@@ -23,7 +23,6 @@ import ListingTile from "./components/card/listing-tile.vue";
         </div>
         <Footer/>
       </div>
-
     </div>
   </header>
 

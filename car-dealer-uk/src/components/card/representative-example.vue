@@ -122,7 +122,7 @@ export default {
 }
 
 .accordion-dropdown{
-padding-top: 20px;
+padding-top: 10px;
 padding-left: 10px;
 padding-right: 10px;
 background-color: #FFF;
